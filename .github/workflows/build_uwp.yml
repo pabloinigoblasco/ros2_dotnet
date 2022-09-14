@@ -26,7 +26,7 @@ jobs:
         pip install -U catkin_pkg EmPy lark-parser pyparsing pyyaml numpy
         pip install -U pytest coverage mock
         pip install -U flake8 flake8-blind-except flake8-builtins flake8-class-newline flake8-comprehensions flake8-deprecated flake8-docstrings flake8-import-order flake8-quotes pep8 pydocstyle
-        choco install -y cppcheck
+        choco install -y cppcheck==2.7
 
     - name: Checkout ament source
       run: |
