@@ -10,7 +10,7 @@ jobs:
     strategy:
       matrix:
         arch: [x64, Win32]
-    runs-on: windows-latest
+    runs-on: windows-2019
     env:
       VisualStudioVersion: '16.0'
 
