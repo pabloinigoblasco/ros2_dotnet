@@ -13,10 +13,10 @@ jobs:
     - name: Setup ROS2
       uses: ros-tooling/setup-ros@v0.3
       with:
-        required-ros-distributions: foxy
+        required-ros-distributions: galactic
     - uses: ros-tooling/action-ros-ci@0.2.4
       with:
         package-name: rcldotnet_examples
-        target-ros2-distro: foxy
+        target-ros2-distro: galactic
         vcs-repo-file-url: ${{github.workspace}}/.github/workflows/ci.repos
         extra-cmake-args: -DCMAKE_SYSTEM_VERSION=10.0.19041.0 -Wno-dev
