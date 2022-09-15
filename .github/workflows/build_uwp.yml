@@ -6,7 +6,7 @@ jobs:
     strategy:
       matrix:
         arch: [x64, Win32]
-    runs-on: windows-2019
+    runs-on: windows-latest
     env:
       VisualStudioVersion: '16.0'
 
@@ -23,6 +23,7 @@ jobs:
         pip install -U pytest coverage mock
         pip install -U flake8 flake8-blind-except flake8-builtins flake8-class-newline flake8-comprehensions flake8-deprecated flake8-docstrings flake8-import-order flake8-quotes pep8 pydocstyle
         choco install -y cppcheck --version=2.7
+        pip install -U mypy==0.761 pytest-mock
 
     - name: Checkout ament source
       run: |
